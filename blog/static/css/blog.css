@@ -1,0 +1,118 @@
+/*!
+ * Start Bootstrap - 2 Col Portfolio HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+.navbar-static-top{
+	margin-bottom:0;
+}
+
+
+span {
+	margin-left: 40px;
+	color: #7FFFD4;
+}
+
+
+h1 a{
+	 color:	#FCA205;
+	}
+
+h1.page-header {
+
+	font-family: serif;
+	font-style: italic;
+}
+
+#date {
+	font-size: 12px;
+	font-family: Georgia, 'Times New Roman', serif;
+	color: #000;
+	text-align: center;
+    font-weight: 100;
+}
+
+#dblog{
+
+
+	font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+	font-weight: normal;
+    font-size: 1.75em;
+	letter-spacing: .2em;
+	line-height: 1.1em;
+	margin:0px;
+	text-align: center;
+	text-transform: uppercase;
+}
+h6 {
+font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+  font-weight: normal;
+  letter-spacing: .2em;
+  line-height: 1.1em;
+  margin:0px;
+  text-align: right;
+  text-transform: uppercase;
+
+}
+
+
+p{
+	text-align: center;
+}
+
+
+.style-article-img {
+  display: block;
+  margin-left:60px;
+  margin-right: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-height: 400px;
+}
+
+/*!
+<!-- slider  ---> 
+*/
+
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: 500ms ease-in-out left;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+      > .item{
+        // use your favourite prefixer here
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none!important;
+      }
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
+}
+
+// non-related styling:
+body{
+  background: #333;
+  color: #ddd;
+}
+
+

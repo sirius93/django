@@ -1,0 +1,24 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title>Rent / Hire Suits, sherwani, wedding gown, bridal wear, blazers | CandidKnots</title>
+	<link	rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link	rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link	rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+
+<body>
+
+{% for post in posts %}
+    <div>
+        
+        <h1><a href="">{{ post.title }}</a></h1>
+	<p>published: {{ post.published_date }}</p>        
+	<p>{{ post.text|linebreaksbr }}</p>
+	<img src="mysite/image/1.jpg">
+    </div>
+{% endfor %}
+
+
+<body>
+</html>

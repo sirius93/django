@@ -1,0 +1,43 @@
+{%extends 'blog/base.html'%}
+{% block content %}
+
+{% load django_markdown %}
+
+
+
+<div class="row">
+    <div class="col-md-12">
+      <div class="carousel slide multi-item-carousel" id="theCarousel">
+  
+        <div class="carousel-inner">
+          {% for post in posts %}
+          <div class="item active">
+          	<div class="col-xs-2"> <a href="{% url 'post_detail' pk=post.pk %}"><img src="{{ post.link }}" width:"200" height="300"></a><h6>{{ post.title }}<h6></div>
+          </div>
+          {% endfor %}
+         
+      </div>
+    </div>
+  </div>
+</div>
+
+	<br/>
+	<br/>
+
+		{% if post.published_date %}
+			<div id="date">
+				{{	post.published_date|date:"M,d, Y"	}}
+			</div>	
+			<h1 id="dblog"> {{ post.title }} </h1>
+			
+				<a href="https://twitter.com/share" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			
+		{% endif %}
+		<p>
+		<img id="featured" src="{{ post.link }}" class="img-rounded"alt="featured image">
+		 {{ post.text|markdown }}
+
+		</p>
+	
+
+{% endblock %}
