@@ -44,20 +44,36 @@ h1.page-header {
 	text-align: center;
 	text-transform: uppercase;
 }
+
+#shares{
+
+  text-align: center;
+}
+
 h6 {
 font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
   font-weight: normal;
   letter-spacing: .2em;
   line-height: 1.1em;
   margin:0px;
-  text-align: right;
+  text-align: left;
   text-transform: uppercase;
 
 }
+.carousel-inner{
+  padding-top: 20px;
+  background-color: powderblue;
+}
+
 
 
 p{
 	text-align: center;
+}
+#featured {
+
+  width: auto;
+  height: 400px;
 }
 
 
@@ -70,49 +86,23 @@ p{
   max-height: 400px;
 }
 
+#content {
+font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+  font-size: 15px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 1.1em;
+  margin-left:250px;
+  margin-right:250px;
+  text-align: center;
+  
+}
+#homeimage{
+
+  text-align: center;
+}
 /*!
 <!-- slider  ---> 
 */
-
-.multi-item-carousel{
-  .carousel-inner{
-    > .item{
-      transition: 500ms ease-in-out left;
-    }
-    .active{
-      &.left{
-        left:-33%;
-      }
-      &.right{
-        left:33%;
-      }
-    }
-    .next{
-      left: 33%;
-    }
-    .prev{
-      left: -33%;
-    }
-    @media all and (transform-3d), (-webkit-transform-3d) {
-      > .item{
-        // use your favourite prefixer here
-        transition: 500ms ease-in-out all;
-        backface-visibility: visible;
-        transform: none!important;
-      }
-    }
-  }
-  .carouse-control{
-    &.left, &.right{
-      background-image: none;
-    }
-  }
-}
-
-// non-related styling:
-body{
-  background: #333;
-  color: #ddd;
-}
 
 

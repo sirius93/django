@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'blog',
     'django_markdown',
-    'bootstrap_pagination',
-    'bootstrap3',
+    
+    
 ]
 
 MIDDLEWARE_CLASSES = [
